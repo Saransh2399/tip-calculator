@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.calc-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+}
+
+.calc-body__left,
+.calc-body__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  padding: 3rem 5rem;
+  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.calc-body__left {
+  border-right: 1px solid #000;
+}
+
+.calc-body__right {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calc-body__right > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.form__input {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.form__input:active, .form__input:focus {
+  outline: none;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #000;
+}
+
+.tip-percent {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.tip-percent input {
+  border: none;
+}
+
+.increment,
+.decrement {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+
+.increment:active,
+.decrement:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.increment {
+  border-left: 1px solid #000;
+}
+
+.decrement {
+  border-right: 1px solid #000;
+}
+
+.calc-body__right > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calc-body__right > div:last-child .result__right {
+  font-weight: 700;
+}
+
+.result__left,
+.result__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.result__left h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.result__left h2 span:last-child {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.result__right {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.result__right::before {
+  content: "$";
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h1>Tip Calculator by Saransh</h1>
+      <div class="calc-body">
+        <div class="calc-body__left">
+          <div class="form__group">
+            <label for="bill">Bill</label>
+            <input
+              type="text"
+              id="bill"
+              placeholder="Enter amount"
+              class="form__input"
+              value="0"
+            />
+          </div>
+          <div class="form__group">
+            <label for="bill">Tip%</label>
+            <div class="slider">
+              <div class="decrement" id="decrement-tip">-</div>
+              <div class="tip-percent">
+                <input
+                  type="text"
+                  placeholder="Enter Tip percent"
+                  class="form__input"
+                  id="tip-selector"
+                />
+              </div>
+              <div class="increment" id="increment-tip">+</div>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="bill">Number of people</label>
+            <div class="slider">
+              <div class="decrement" id="decrement-people">-</div>
+              <div class="tip-percent">
+                <input
+                  type="text"
+                  placeholder="Enter Number of people"
+                  class="form__input"
+                  id="people-selector"
+                />
+              </div>
+              <div class="increment" id="increment-people">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="calc-body__right">
+          <div>
+            <div class="result__left">
+              <h2><span>Tip</span><span>Per person</span></h2>
+            </div>
+            <div class="result__right" id="tip-per-person">$25.00</div>
+          </div>
+          <div>
+            <div class="result__left">
+              <h2><span>Total</span><span>Per person</span></h2>
+            </div>
+            <div class="result__right" id="total-per-person">$250.00</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+label {
+  margin-bottom: 0.5rem;
+}
+h1 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.calc-body {
+  display: flex;
+  //padding: 5rem 7rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+}
+.calc-body__left,
+.calc-body__right {
+  flex: 1;
+  height: 100%;
+  padding: 3rem 5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.calc-body__left {
+  //background-color: rgb(119, 119, 165);
+  border-right: 1px solid #000;
+}
+.calc-body__right {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  //justify-self: stretch;
+  //align-self: stretch;
+  //align-items: center;
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.form__input {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 2.4rem;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+}
+.tip-percent {
+  flex: 1;
+}
+.tip-percent input {
+  border: none;
+}
+.increment,
+.decrement {
+  flex: 1;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e4e4;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.95);
+  }
+}
+.increment {
+  border-left: 1px solid #000;
+}
+
+.decrement {
+  border-right: 1px solid #000;
+}
+
+.calc-body__right > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:last-child .result__right {
+    font-weight: 700;
+  }
+}
+.result__left,
+.result__right {
+  flex: 1;
+}
+
+.result__left {
+  h2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.result__left {
+  h2 {
+    span {
+      &:last-child {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.result__right {
+  font-size: 6rem;
+  font-weight: 500;
+  &::before {
+    content: "$";
+  }
+}
